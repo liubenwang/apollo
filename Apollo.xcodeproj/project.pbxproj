@@ -12,6 +12,7 @@
 		25D2C4E525E4B14C0031264F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4E425E4B14C0031264F /* BinaryTree.swift */; };
 		25D2C4E825E4CAB10031264F /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4E725E4CAB10031264F /* TreeNode.swift */; };
 		25D2C4ED25E4D43D0031264F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */; };
+		25D2C51925E654670031264F /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C51825E654670031264F /* TreeBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		25D2C4E425E4B14C0031264F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		25D2C4E725E4CAB10031264F /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		25D2C51825E654670031264F /* TreeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				25D2C4E425E4B14C0031264F /* BinaryTree.swift */,
 				25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */,
 				25D2C4E725E4CAB10031264F /* TreeNode.swift */,
+				25D2C51825E654670031264F /* TreeBuilder.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D2C4E525E4B14C0031264F /* BinaryTree.swift in Sources */,
+				25D2C51925E654670031264F /* TreeBuilder.swift in Sources */,
 				25B2E1D425CE633D007D824D /* BinarySearch.swift in Sources */,
 				25D2C4E825E4CAB10031264F /* TreeNode.swift in Sources */,
 				25B2E1CC25CE630D007D824D /* main.swift in Sources */,

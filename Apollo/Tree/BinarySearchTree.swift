@@ -111,6 +111,38 @@ class BinarySearchTree {
 
         return tree
     }
+
+    static func maxDepth(tree: TreeNode<Int>?) -> Int {
+        guard tree != nil else {
+            return 0
+        }
+
+        var queue = [tree!]
+        var front = 0
+        var rear = queue.count
+        var level = 1
+
+        while !queue.isEmpty {
+            let first = queue.remove(at: 0)
+            front += 1
+
+            if first.left != nil {
+                queue.append(first.left!)
+            }
+
+            if first.right != nil {
+                queue.append(first.right!)
+            }
+
+            if front == rear {
+                front = 0
+                rear = queue.count
+
+                level += queue.isEmpty ? 0 : 1
+            }
+        }
+        return level
+    }
 }
 
 // MARK: - 测试用例
@@ -139,10 +171,11 @@ extension BinarySearchTree {
 
     static func testDelete() {
 
-        testDelete(target: 33)
-        testDelete(target: 13)
-        testDelete(target: 18)
-        testDelete(target: 58)
+//        testDelete(target: 33)
+//        testDelete(target: 13)
+//        testDelete(target: 18)
+//        testDelete(target: 58)
+        testLevel()
     }
 
     static func testDelete(target: Int) {
@@ -157,5 +190,14 @@ extension BinarySearchTree {
         } else {
             print("未找到指定值：\(target)")
         }
+    }
+
+    static func testLevel() {
+        let elements = [9,8]
+//        let elements = [33,16,50,13,18,34,58,15,17,25,51,66,19,27,55]
+        let root = TreeBuilder.buildBinaryTree(with: elements)
+        print("中序遍历")
+        BinaryTree.inOrder(tree: root)
+       print("最大层是\(maxDepth(tree: root))")
     }
 }
