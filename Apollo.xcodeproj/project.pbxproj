@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		25B2E1CC25CE630D007D824D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2E1CB25CE630D007D824D /* main.swift */; };
 		25B2E1D425CE633D007D824D /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2E1D325CE633D007D824D /* BinarySearch.swift */; };
+		25D2C4E525E4B14C0031264F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4E425E4B14C0031264F /* BinaryTree.swift */; };
+		25D2C4E825E4CAB10031264F /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4E725E4CAB10031264F /* TreeNode.swift */; };
+		25D2C4ED25E4D43D0031264F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +30,9 @@
 		25B2E1C825CE630D007D824D /* Apollo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Apollo; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B2E1CB25CE630D007D824D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		25B2E1D325CE633D007D824D /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		25D2C4E425E4B14C0031264F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		25D2C4E725E4CAB10031264F /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,28 @@
 			isa = PBXGroup;
 			children = (
 				25B2E1CB25CE630D007D824D /* main.swift */,
-				25B2E1D325CE633D007D824D /* BinarySearch.swift */,
+				25D2C4EB25E4D33A0031264F /* BinarySearch */,
+				25B2E1D725CFD357007D824D /* Tree */,
 			);
 			path = Apollo;
+			sourceTree = "<group>";
+		};
+		25B2E1D725CFD357007D824D /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				25D2C4E425E4B14C0031264F /* BinaryTree.swift */,
+				25D2C4EC25E4D43D0031264F /* BinarySearchTree.swift */,
+				25D2C4E725E4CAB10031264F /* TreeNode.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		25D2C4EB25E4D33A0031264F /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				25B2E1D325CE633D007D824D /* BinarySearch.swift */,
+			);
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D2C4E525E4B14C0031264F /* BinaryTree.swift in Sources */,
 				25B2E1D425CE633D007D824D /* BinarySearch.swift in Sources */,
+				25D2C4E825E4CAB10031264F /* TreeNode.swift in Sources */,
 				25B2E1CC25CE630D007D824D /* main.swift in Sources */,
+				25D2C4ED25E4D43D0031264F /* BinarySearchTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

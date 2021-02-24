@@ -9,4 +9,11 @@ import Foundation
 
 print("开始测试")
 
-BinarySearch.handler()
+// 二分查找
+//BinarySearch.handler()
+
+// 二叉树遍历
+//BinaryTree.handler()
+
+// 二分查找树
+BinarySearchTree.handler()
