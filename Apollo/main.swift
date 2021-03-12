@@ -7,7 +7,11 @@
 
 import Foundation
 
-print("开始测试")
+
+let bubble = BubbleSort(datas: [2,4,1,7,3,7,1,9,0])
+print(bubble.datas)
+let merge = MergeSort(datas: [2,4,1,7,3,7,1,9,0])
+print(merge.datas)
 
 // 二分查找
 //BinarySearch.handler()
@@ -16,4 +20,10 @@ print("开始测试")
 //BinaryTree.handler()
 
 // 二分查找树
-BinarySearchTree.handler()
+//BinarySearchTree.handler()
+
+
+
+
+
+
