@@ -92,8 +92,8 @@ int main(int argc, const char * argv[]) {
         // NSString，
         // NSObject是将对象的地址作为hash值返回的
 
-//        NSLog(@"%p", key);
-//        NSLog(@"%lx", (unsigned long)key.hash);
+        NSLog(@"%p", key);
+        NSLog(@"%lx", (unsigned long)key.hash);
 
     }
     return 0;
