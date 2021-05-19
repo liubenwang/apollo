@@ -7,6 +7,8 @@
 
 #import "PTChild.h"
 
-@implementation PTChild
+@implementation PTChild {
+    NSString *_men;
+}
 
 @end

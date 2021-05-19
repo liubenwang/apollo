@@ -11,16 +11,16 @@ class BubbleSort: Sort {
 
     override func sort() {
 
-        guard datas.count != 1 else {
+        guard array.count != 1 else {
             return
         }
 
-        for i in 0..<datas.count {
+        for i in 0..<array.count {
 
             var flag = true
 
-            for j in 1..<datas.count - i {
-                if datas[j - 1] > datas[j] {
+            for j in 1..<array.count - i {
+                if array[j - 1] > array[j] {
                     swip(lhs: j - 1, rhs: j)
                     flag = false
                 }

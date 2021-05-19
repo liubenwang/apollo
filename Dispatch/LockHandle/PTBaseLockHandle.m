@@ -14,33 +14,25 @@
 
 @implementation PTBaseLockHandle
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.money = 100;
-    }
-    return self;
-}
 
 // 存钱 取钱
-- (void)saveMoney {
-    dispatch_queue_t global = dispatch_queue_create("save", DISPATCH_QUEUE_CONCURRENT);
+- (void)test {
+
+    self.money = 100;
+
+    dispatch_queue_t global = dispatch_get_global_queue(0, 0);
     dispatch_async(global, ^{
         for (NSInteger i = 0; i < 10; i++) {
             [self _saveMoney];
         }
     });
-}
-
-- (void)drawMoney {
-    dispatch_queue_t global = dispatch_queue_create("draw", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(global, ^{
         for (NSInteger i = 0; i < 10; i++) {
             [self _drawMoney];
         }
     });
 }
+
 
 - (void)_saveMoney {
     NSInteger money = self.money;

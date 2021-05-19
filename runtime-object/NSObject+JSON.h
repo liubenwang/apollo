@@ -11,6 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (JSON)
 
++ (instancetype)pt_objectWithDictionry:(NSDictionary *)dictonry;
+
+
+- (void)print;
+
 @end
 
 NS_ASSUME_NONNULL_END

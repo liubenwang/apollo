@@ -20,26 +20,26 @@
     [super viewDidLoad];
 
     //192.168.0.193
-    NSURL *url = [NSURL URLWithString:@"http://192.168.0.193/app/login.html"];
-
-    NSString *cookie =  @"cookieKey1=cookieValue1;cookieKey2=cookieValue2";
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-
-    [request addValue:cookie forHTTPHeaderField:@"Cookie"];
-
-
-    [self.webView loadRequest:request];
-    self.webView.UIDelegate = self;
-    self.webView.navigationDelegate = self;
-
-    WKWebViewConfiguration *configuration = self.webView.configuration;
-    configuration.preferences.minimumFontSize = 16;
-    WKUserContentController *controller = configuration.userContentController;
-
-    WKContentWorld *world = [WKContentWorld defaultClientWorld];
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:@"" injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES inContentWorld:world];
-
-    [controller addUserScript:script];
+//    NSURL *url = [NSURL URLWithString:@"http://192.168.0.193/app/login.html"];
+//
+//    NSString *cookie =  @"cookieKey1=cookieValue1;cookieKey2=cookieValue2";
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//
+//    [request addValue:cookie forHTTPHeaderField:@"Cookie"];
+//
+//
+//    [self.webView loadRequest:request];
+//    self.webView.UIDelegate = self;
+//    self.webView.navigationDelegate = self;
+//
+//    WKWebViewConfiguration *configuration = self.webView.configuration;
+//    configuration.preferences.minimumFontSize = 16;
+//    WKUserContentController *controller = configuration.userContentController;
+//
+//    WKContentWorld *world = [WKContentWorld defaultClientWorld];
+//    WKUserScript *script = [[WKUserScript alloc] initWithSource:@"" injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES inContentWorld:world];
+//
+//    [controller addUserScript:script];
 
     // 静态的属性
     // 动态的行为
@@ -47,6 +47,8 @@
     // 单继承
 
     // private default protect public
+
+    [self dispatch];
 }
 
 - (IBAction)reply:(id)sender {
@@ -95,4 +97,23 @@
 
 
 
+
 @end
+
+
+/**
+ sync 在当前线程执行
+ async 开辟线程的能力
+
+
+ */
+
+/**
+ 进程与线程的关系
+ 线程与队列的关系:
+ 线程用来处理任务，队列用来管理任务，队列中的任务需要线程来执行
+
+ 并发队列，串行队列 决定任务的处理方式
+ 同步，异步 决定是否开辟新的线程
+
+ */

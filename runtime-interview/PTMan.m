@@ -9,4 +9,8 @@
 
 @implementation PTMan
 
+- (void)greet {
+    NSLog(@"PTMan: %@ %@", self, self->_name);
+}
+
 @end

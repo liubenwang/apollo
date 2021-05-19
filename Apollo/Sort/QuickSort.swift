@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class QuickSort: Sort {
+    override func sort() {
+        // 使用递归
+    }
+}

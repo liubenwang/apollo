@@ -8,26 +8,26 @@
 import Foundation
 
 class Sort {
-    private(set) var datas: [Int] = []
+    fileprivate(set) var array: [Int] = []
 
     init(datas: [Int]) {
-        self.datas = datas
+        self.array = datas
         
         self.sort()
     }
 
     func swip(lhs: Int, rhs: Int) {
-        guard lhs < datas.count else { return }
-        guard rhs < datas.count else { return }
+        guard lhs < array.count else { return }
+        guard rhs < array.count else { return }
 
-        let temp = datas[lhs]
-        datas[lhs] = datas[rhs]
-        datas[rhs] = temp
+        let temp = array[lhs]
+        array[lhs] = array[rhs]
+        array[rhs] = temp
     }
 
     func set(value: Int, for index: Int) {
-        guard index < datas.count else { return }
-       datas[index] = value
+        guard index < array.count else { return }
+       array[index] = value
     }
 
     func sort() {

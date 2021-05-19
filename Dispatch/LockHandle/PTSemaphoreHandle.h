@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PTSemaphoreHandle : PTBaseLockHandle
 
+- (void)test_semaphore;
+
 @end
 
 NS_ASSUME_NONNULL_END

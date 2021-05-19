@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  WebProtal
+//  Dispatch
 //
-//  Created by benwang on 2021/3/8.
+//  Created by benwang on 2021/3/13.
 //
 
 #import "AppDelegate.h"

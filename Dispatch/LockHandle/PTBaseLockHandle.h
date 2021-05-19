@@ -12,9 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PTBaseLockHandle : NSObject
 
 
-- (void)saveMoney;
-
-- (void)drawMoney;
+- (void)test;
 
 - (void)_saveMoney;
 

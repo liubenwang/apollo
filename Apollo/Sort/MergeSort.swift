@@ -10,7 +10,7 @@ import Foundation
 class MergeSort: Sort {
 
     override func sort() {
-        mergeSort(lhs: 0, rhs: datas.count - 1)
+        mergeSort(lhs: 0, rhs: array.count - 1)
     }
 
     func mergeSort(lhs: Int, rhs: Int) {
@@ -38,24 +38,24 @@ class MergeSort: Sort {
 
         while index0 <= mid && index1 <= rhs {
 
-            if datas[index0] <= datas[index1] {
-                temps.append(datas[index0])
+            if array[index0] <= array[index1] {
+                temps.append(array[index0])
                 index0 += 1
             } else {
-                temps.append(datas[index1])
+                temps.append(array[index1])
                 index1 += 1
             }
             index += 1
         }
 
         while index0 <= mid {
-            temps.append(datas[index0])
+            temps.append(array[index0])
             index0 += 1
             index += 1
         }
 
         while index1 <= rhs {
-            temps.append(datas[index1])
+            temps.append(array[index1])
             index1 += 1
             index += 1
         }

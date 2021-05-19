@@ -81,6 +81,10 @@ int main(int argc, const char * argv[]) {
         Class cls = objc_getClass("NSObject");
         NSLog(@"%p", cls);
 
+
+
+        
+
     }
     return 0;
 }

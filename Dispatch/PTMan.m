@@ -6,7 +6,11 @@
 //
 
 #import "PTMan.h"
+#import <pthread/pthread.h>
 
-@implementation PTMan
+@implementation PTMan {
+    pthread_rwlock_t _lock;
+}
+
 
 @end

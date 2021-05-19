@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PTMutextLockHandle : PTBaseLockHandle
 
+- (void)testRecusive;
+
+- (void)testCondition;
+
 @end
 
 NS_ASSUME_NONNULL_END
